@@ -1,0 +1,15 @@
+export { default as CloseSVG } from './close.svg';
+export { default as CloseFilledSVG } from './closeFilled.svg'
+export { default as DetailsSVG } from './details.svg';
+export { default as DownSVG } from './down.svg';
+export { default as EducationSVG } from './education.svg';
+export { default as EmailSVG } from './email.svg';
+export { default as ExperienceSVG } from './experience.svg';
+export { default as GithubSVG } from './github.svg';
+export { default as LinkedInSVG } from './linkedIn.svg';
+export { default as LogoSVG } from './logo.svg';
+export { default as MessengerSVG } from './messenger.svg';
+export { default as NextSVG } from './next.svg';
+export { default as PrevSVG } from './prev.svg';
+export { default as ScrollSVG } from './scroll.svg';
+export { default as SkillsSVG } from './skills.svg';
