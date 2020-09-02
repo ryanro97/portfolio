@@ -16,7 +16,9 @@ const Home = ({ home }) => {
 
   useEffect(() => {
     if (!(state.transition ^ PRE_TRANSITION_IN)) {
-      handleTransition();
+      setTimeout(() => {
+        handleTransition();
+      }, 0);
     } else if (!(state.transition ^ PAUSE)) {
       const timeout = setTimeout(() => {
         handleTransition();

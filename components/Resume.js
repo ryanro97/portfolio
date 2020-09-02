@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import {
+  DownloadSVG,
   NextSVG,
   PrevSVG,
 } from '../svgs';
@@ -125,6 +126,10 @@ const Resume = ({ resume }) => {
           renderMenuCategory(key, icon)
         ))
       }
+      <Download href="/Resume.pdf" download>
+        <DownloadSVG />
+        Download
+      </Download>
     </MenuWrapper>
   );
 
@@ -206,7 +211,7 @@ const CategoryPage = styled.div`
   }
 
   > div:last-child {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 `;
 
@@ -226,6 +231,32 @@ const Data = styled.div`
 
   > p {
     white-space: pre-wrap;
+  }
+`;
+
+const Download = styled.a`
+  align-items: center;
+  border: .1rem solid white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  text-decoration: none;
+
+  > svg {
+    height: 2rem;
+    margin-bottom: .25rem;
+    margin-top: .25rem;
+    width: 2rem;
+  }
+
+  :hover {
+    background-color: white;
+    color: #658DC6;
+
+    > svg {
+      fill: #658DC6;
+    }
   }
 `;
 
@@ -271,7 +302,7 @@ const MenuWrapper = styled.div`
     margin-top: 2rem;
   }
 
-  > div:last-child {
+  > a:last-child {
     margin-bottom: 2rem;
   }
 `;

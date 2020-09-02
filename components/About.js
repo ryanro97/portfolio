@@ -59,7 +59,7 @@ const AboutWrapper = styled.div`
   width: 80%;
 
   > * {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 `;
 

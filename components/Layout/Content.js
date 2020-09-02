@@ -5,7 +5,9 @@ const Content = ({ children }) => {
   const [transition, setTransition] = useState(false);
 
   useEffect(() => {
-    setTransition(true);
+    setTimeout(() => {
+      setTransition(true);
+    }, 0);
   }, []);
 
   return (
@@ -30,7 +32,7 @@ const TransitionWrapper = styled.div`
   height: 100%;
   justify-content: center;
   opacity: ${props => props.transition ? 1 : 0};
-  transition: opacity 2.5s;
+  transition: opacity 1s;
 `;
 
 export default Content;

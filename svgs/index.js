@@ -2,6 +2,7 @@ export { default as CloseSVG } from './close.svg';
 export { default as CloseFilledSVG } from './closeFilled.svg'
 export { default as DetailsSVG } from './details.svg';
 export { default as DownSVG } from './down.svg';
+export { default as DownloadSVG } from './download.svg';
 export { default as EducationSVG } from './education.svg';
 export { default as EmailSVG } from './email.svg';
 export { default as ExperienceSVG } from './experience.svg';

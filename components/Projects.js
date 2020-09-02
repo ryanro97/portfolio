@@ -406,6 +406,7 @@ const ProjectsWrapper = styled.div`
 
 const ReadMe = styled.div`
   height: 90%;
+  margin-bottom: 1rem;
   overflow-y: scroll;
 
   > div {
